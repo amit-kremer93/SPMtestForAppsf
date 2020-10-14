@@ -18,16 +18,8 @@ let package = Package(
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
-//        .target(
-//            name: "AppsFlyerLib",
-//            dependencies: [],
-//            path: "iOS/AppsFlyerLib.Framework"
-//        )
         .binaryTarget(
             name: "AppsFlyerLib",
-//            url: "https://github.com/AppsFlyerSDK/AppsFlyerFramework/releases/download/6.0.5/appsflyer-ios.framework.zip",
-//            checksum: <#String#>)
-            path: "iOS")
-        
+            path: "MacCatalyst/AppsFlyerLib.xcframework")
     ]
 )
