@@ -9,7 +9,7 @@ let package = Package(
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "AppsFlyerLib",
-            targets: ["Versions/A"]),
+            targets: ["AppsFlyerLib"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -21,6 +21,7 @@ let package = Package(
         .target(
             name: "AppsFlyerLib",
             dependencies: [],
+            path: "Versions/A",
             cSettings:[
                 .headerSearchPath("Versions/A/Headers")]),
         .testTarget(
