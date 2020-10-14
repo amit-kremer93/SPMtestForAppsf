@@ -22,10 +22,8 @@ let package = Package(
             name: "AppsFlyerLib",
             dependencies: [],
             path: "Versions/A",
+            exclude:["AppsflyerLib"],
             cSettings:[
                 .headerSearchPath("Versions/A/Headers")]),
-        .testTarget(
-            name: "AppsFlyerLibTests",
-            dependencies: ["AppsFlyerLib"]),
     ]
 )
