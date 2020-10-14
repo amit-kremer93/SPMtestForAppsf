@@ -21,8 +21,6 @@ let package = Package(
         .target(
             name: "AppsFlyerLib",
             dependencies: [],
-            path: "Versions/A",
-            exclude:["AppsflyerLib"],
             cSettings:[
                 .headerSearchPath("Versions/A/Headers")]),
     ]
