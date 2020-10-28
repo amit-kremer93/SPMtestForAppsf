@@ -11,10 +11,11 @@ let package = Package(
             targets: ["AppsFlyerLib"]),
     ],
     dependencies: [
+        .package(url: "https://github.com/amit-kremer93/SPMtestForAppsf", from: "1.0.18")
     ],
     targets: [
         .binaryTarget(
             name: "AppsFlyerLib",
-            path: "Mac\ Catalyst/AppsFlyerLib.xcframework")
+            path: "MacCatalyst/AppsFlyerLib.xcframework")
     ]
 )
